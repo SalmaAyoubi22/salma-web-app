@@ -1,0 +1,45 @@
+:root{
+  --bg:#f6f8fb; --card:#fff; --border:#e5eaf1;
+  --text:#0b1220; --muted:#5b6b82;
+  --blue:#2563eb; --blue-weak:#eaf1ff; --green:#16a34a; --red:#ef4444;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+
+/* Auth */
+.auth-page{max-width:960px;margin:40px auto;padding:0 16px}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.logo{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#111827;color:#fff;font-weight:700}
+.logo.small{width:32px;height:32px;border-radius:10px}
+.brand-text h1{margin:0}
+.muted{color:var(--muted)} .tiny{font-size:12px}
+
+.auth-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;max-width:520px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.tab{padding:10px;border:1px solid var(--border);border-radius:12px;background:#fff;cursor:pointer;font-weight:600}
+.tab.active{border-color:#93c5fd;box-shadow:0 0 0 3px #e0f2fe}
+.form{display:grid;gap:10px}
+input,textarea{border:1px solid var(--border);border-radius:12px;padding:12px;background:#fff;color:var(--text)}
+.btn{border-radius:12px;border:1px solid var(--border);padding:10px 14px;background:#edf1f7;cursor:pointer}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+.error{color:var(--red)}
+
+/* App shell */
+.app-shell{display:grid;grid-template-columns:260px 1fr;gap:16px;max-width:1200px;margin:28px auto;padding:0 16px}
+.sidebar{background:#fff;border:1px solid var(--border);border-radius:16px;padding:12px}
+.sidebar-header{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+.title{font-weight:700}
+
+.lesson-list{display:grid;gap:8px}
+.lesson{display:flex;justify-content:space-between;align-items:center;text-align:left;padding:10px;border:1px solid var(--border);background:#fff;border-radius:12px;cursor:pointer}
+.lesson.active{background:#eef3ff;border-color:#93c5fd}
+.check{color:var(--green)}
+
+/* Main */
+.main{background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px}
+.code{background:#0c1222;color:#e5ecf6;padding:12px;border-radius:10px;overflow:auto}
+.exercise h2{margin:8px 0}
+.actions{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.feedback.ok{color:var(--green)} .feedback.bad{color:var(--red)}

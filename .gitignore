@@ -1,0 +1,15 @@
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.vite/
+Frontend/.env
+
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+
+*.sqlite
+*.db
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
